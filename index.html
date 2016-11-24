@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="Ключевые слова">
+		<meta name="description" content="Описание контента страницы">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
+
+		<title>Title Page</title>
+		<link href="css/reset.css" type="text/css" rel="stylesheet">
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<link href="css/jquery.scrollbar.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="javascript/jquery2.1.4.js"></script>
+		<script type="text/javascript" src="javascript/highcharts.js"></script>
+		<script type="text/javascript" src="javascript/scripts.js"></script>
+		<script type="text/javascript" src="javascript/jquery.scrollbar.js"></script>
+		<script>
+			$(document).ready(function() {
+				jQuery('.scrollbar-outer').scrollbar();
+
+        document.getElementById("defaultOpen").click();
+
+				$("#plus").click(function(){
+					var val = $("input[name=amount]").val() * 1;
+					var newval = val + 1;
+					$("input[name=amount]").val(newval);
+				});
+
+				$("#minus").click(function(){
+					var val = $("input[name=amount]").val() * 1;
+					if(val > 0)	{
+						var newval = val - 1;
+						$("input[name=amount]").val(newval);
+					}
+				});
+      });
+
+      function tabs(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+	</head>
+	<body>
+
+
+	<header>
+		<nav class="header-navbar">
+			<ul class="header-navbar-list">
+				<li><a href=""><span class="icon icon-vc"></span>VK group</a></li>
+				<li><a href=""><span class="icon icon-top"></span>TOP players</a></li>
+				<li><a href=""><span class="icon icon-suppot"></span>Suppot team</a></li>
+			</ul>
+			<div class="projectName">
+				<span class="green">Site</span><span class="while">Name</span>
+			</div>
+		</nav>
+		<div class="singIn">
+			<a href="#">
+				<img alt="image" src="images/vcSing.png">
+			</a>
+			<a href="#">
+				<img alt="image" src="images/steamSing.png">
+			</a>
+		</div>
+
+	</header>
+	<aside class="left">
+		<nav class="top-menu">
+			<ul class="tab">
+				<li onclick="tabs(event, 'oneTab')" class="tablinks">
+					<a href="javascript:void(0)">
+						<span class="icon icon-engchat"></span>
+						ENG Chat
+					</a>
+				</li>
+				<li onclick="tabs(event, 'twoTab')" class="tablinks">
+					<a href="javascript:void(0)" id="defaultOpen">
+            <span class="icon icon-ruchat"></span>
+						RU Chat
+					</a>
+				</li>
+				<li onclick="tabs(event, 'threeTab')" class="tablinks">
+					<a href="javascript:void(0)">
+						<span class="icon icon-history"></span>
+						History games
+					</a>
+				</li>
+				<li onclick="tabs(event, 'fourTab')" class="tablinks">
+					<a href="javascript:void(0)">
+						<span class="icon icon-promo"></span>
+						Promo codes
+					</a>
+				</li>
+			</ul>
+		</nav>
+    <div id="oneTab" class="tabcontent">
+
+
+    </div>
+    <div id="twoTab" class="tabcontent">
+  		<div class="online">
+  			<img alt="image" src="images/online.png">
+  			281 Онлайн
+  		</div>
+  		<div class="chat scrollbar-outer">
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/54.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>Nikname Super</span>
+  				<span class=chat-time>8:20</span>
+  				<div class="chat-text">
+  					Чуваки офигенный сайт. От дизайна прям тащюсь.Офигенно выглядит.Просто когда мне плохо сяда захожу и наслождаюсь
+  				</div>
+  			</div>
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/52.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>2i teepok</span>
+  				<span class=chat-time>7:30</span>
+  				<div class="chat-text">
+  					Да крутой проект. Выглюдит серьездно и выигрыши приличные
+  				</div>
+  			</div>
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/53.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>2i teepok</span>
+  				<span class=chat-time>7:30</span>
+  				<div class="chat-text">
+  					надо было вместо президенства такой сайт делать dfg fgdfg fgdfg
+  				</div>
+  			</div>
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/52.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>Nikname Super</span><span class=chat-time>7:30</span>
+  				<div class="chat-text">
+  					Азаза лол, про*бал крутую тему
+  				</div>
+  			</div>
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/54.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>Nikname Super</span>
+  				<span class=chat-time>8:20</span>
+  				<div class="chat-text">
+  					Чуваки офигенный сайт. От дизайна прям тащюсь.Офигенно выглядит.Просто когда мне плохо сяда захожу и наслождаюсь
+  				</div>
+  			</div>
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/52.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>2i teepok</span>
+  				<span class=chat-time>7:30</span>
+  				<div class="chat-text">
+  					Да крутой проект. Выглюдит серьездно и выигрыши приличные
+  				</div>
+  			</div>
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/53.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>2i teepok</span>
+  				<span class=chat-time>7:30</span>
+  				<div class="chat-text">
+  					надо было вместо президенства такой сайт делать
+  				</div>
+  			</div>
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/52.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>Nikname Super</span><span class=chat-time>7:30</span>
+  				<div class="chat-text">
+  					Азаза лол, про*бал крутую тему
+  				</div>
+  			</div>
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/54.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>Nikname Super</span>
+  				<span class=chat-time>8:20</span>
+  				<div class="chat-text">
+  					Чуваки офигенный сайт. От дизайна прям тащюсь.Офигенно выглядит.Просто когда мне плохо сяда захожу и наслождаюсь
+  				</div>
+  			</div>
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/52.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>2i teepok</span>
+  				<span class=chat-time>7:30</span>
+  				<div class="chat-text">
+  					Да крутой проект. Выглюдит серьездно и выигрыши приличные
+  				</div>
+  			</div>
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/53.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>2i teepok</span>
+  				<span class=chat-time>7:30</span>
+  				<div class="chat-text">
+  					надо было вместо президенства такой сайт делать
+  				</div>
+  			</div>
+  			<div class="chat-massage">
+  				<figure>
+  					<img alt="image" src="images/52.png" class="chat-ava">
+  				</figure>
+  				<span class=chat-author>Nikname Super</span><span class=chat-time>7:30</span>
+  				<div class="chat-text">
+  					Азаза лол, про*бал крутую тему
+  				</div>
+  			</div>
+  		</div>
+      <form class="form-send-massages" method="POST">
+        <input type="text" name="send-massages" class="send-massages" placeholder="Введите сообщение"/>
+        <img alt="send massages" class="plain" src="images/plain.png">
+      </form>
+		</div>
+    <div id="threeTab" class="tabcontent">
+      <h1 style="text-align:center;">2</h1>
+    </div>
+    <div id="fourTab" class="tabcontent">
+      <h1 style="text-align:center;">3</h1>
+    </div>
+		<div class="aside-footer">
+			<a href="">Пользовательское соглашение</a><a href="">Правила чата</a>
+		</div>
+	</aside>
+
+	<div class="deposit">45713</div>
+
+	<div class="center-block">
+		<div class="center-conteiner" id="container"></div>
+	</div>
+
+	<aside class="right">
+		<div class="right-conteiner">
+			Amount
+			<form name="amount">
+				<input id="amount" name="amount" type="text" value="0">
+				<div class="btn-block">
+					<button class="batton" id="plus">+</button>
+					<button class="batton" id="minus">-</button>
+				</div>
+			</form>
+			Coefficient
+			<h1>90</h1>
+			<div class="profit">
+				You profit
+				<h1>168</h1>
+			</div>
+			<a href="">
+				<figure>
+					<img alt="image" src="images/call.png">
+				</figure>
+			</a>
+			<a href="">
+				<figure>
+					<img alt="image" src="images/put.png">
+				</figure>
+			</a>
+		</div>
+	</aside>
+
+	<footer>
+		<div class="row">
+			<span class="template">Template <a href="#">Dark</a></span>
+			<span class="createdby">Created by studio <a href="#">CoolBIG</a></span>
+		</div>
+	</footer>
+	</body>
+</html>
